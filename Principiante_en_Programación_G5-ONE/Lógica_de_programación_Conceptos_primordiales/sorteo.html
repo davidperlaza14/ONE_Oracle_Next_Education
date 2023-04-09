@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE</title>
+</head>
+<body>
+    <h3>Oracle Next Education. </h3>
+    <br>
+    <hr>
+    <br>
+
+    <h1>PROGRAMA CALCULAR IMC</h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	}  
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+    function sorteo(n) {
+        
+        return Math.round(Math.random()*n);
+    }
+
+
+    var numeroPensado = sorteo(10);
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+    if (numeroPensado == numeroLanzado){
+        imprimir("usted acertó Lanzando el numero " + numeroPensado);
+    }
+    else {
+        imprimir("usted erró, el número pensado era " + numeroPensado);    
+    }
+
+	
+
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE</title>
+</head>
+<body>
+    <h1>PROGRAMA CALCULAR IMC</h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	}  
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+	function calcularImc(peso,altura) {
+
+		return (peso / (altura * altura));
+	
+	}
+
+	nombre = prompt("infome su nombre");
+	pesoInformado = prompt(nombre + ", infome su peso");
+	alturaInformado = prompt(nombre + ",infome su altura");
+	
+	imcCalculado = calcularImc(pesoInformado,alturaInformado);
+
+	imprimir(nombre + ", su imc calculado es: " + imcCalculado);
+
+    if (imcCalculado < 18.5) {
+        imprimir("IMC abajo de lo recomendado")
+    }
+
+    if (imcCalculado >= 18.5) {
+        if (imcCalculado < 25) {
+            imprimir("IMC esta dentro del intervalo normal");
+        }
+        
+    }
+    
+    if (imcCalculado >= 25) {
+        if (imcCalculado < 30) {
+            imprimir("IMC esta en sobre peso");
+        }
+        
+    }
+
+    if (imcCalculado >= 30) {
+        imprimir("IMC conciderado como abesidad")
+    }
+
+</script>
+</body>
+</html>

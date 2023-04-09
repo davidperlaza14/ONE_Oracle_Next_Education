@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<input placeholder="Escribe el texto a mostrar">
+
+<button>Mostrar texto escrito</button>
+<script>
+    
+    var input = document.querySelector("input");
+    input.focus();
+
+    function mostrarTexto() {
+        alert(input.value);
+        input.value = "";
+        
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = mostrarTexto;
+    
+
+
+</script>
