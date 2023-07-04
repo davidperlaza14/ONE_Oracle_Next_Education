@@ -1,0 +1,6 @@
+package enums;
+
+public enum Dia {
+
+	LUNES,MARTES,MIERCOLES,JUEVES,VERNES,SABADO,DOMINGO
+}
